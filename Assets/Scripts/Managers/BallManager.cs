@@ -27,8 +27,8 @@ public class BallManager : MonoBehaviour
     [SerializeField, Header("Debug Output (read only)")]
     private float ballVelocityMagnitude;
     //JuliaC, add speed and jump variables
-    float xMoveSpeed = ballVelocityMagnitude;
-    float yJumpSpeed = ballVelocityMagnitude;
+    //float xMoveSpeed = ballVelocityMagnitude;
+    //float yJumpSpeed = ballVelocityMagnitude;
 
     public void Awake()
     {
@@ -95,21 +95,21 @@ public class BallManager : MonoBehaviour
             SetBallToStartPosition();
         }
         //MY CHANGES START
-        switch (other.gameObject.tag)
-        {
-            case "BounceButton":
-                yJumpSpeed * 10;
-                break;
-            case "BoostButton":
-                xMoveSpeed * 4;
-                break;
-            case "SlowButton":
-                xMoveSpeed / 4;
-                break;
-            case "DONOTTOUCH":
+       // switch (other.gameObject.tag)
+       // {
+        //    case "BounceButton":
+        //        yJumpSpeed * 10;
+        //        break;
+        //    case "BoostButton":
+        //        xMoveSpeed * 4;
+        //        break;
+        //    case "SlowButton":
+         //       xMoveSpeed / 4;
+         //       break;
+         //   case "DONOTTOUCH":
                 //you're in time out >:(
-                break;
-        }
+         //       break;
+        //}
     }                
     
 
