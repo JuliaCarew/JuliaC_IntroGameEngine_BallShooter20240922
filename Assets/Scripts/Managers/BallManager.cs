@@ -9,7 +9,7 @@ using UnityEngine;
 public class BallManager : MonoBehaviour
 {
     [Header("References")]
-    public GameObject ball;  // Ball Mesh?
+    public GameObject ball;  
     public Rigidbody rb_ball;
     public GameObject aimGuide;
 
@@ -26,9 +26,6 @@ public class BallManager : MonoBehaviour
 
     [SerializeField, Header("Debug Output (read only)")]
     private float ballVelocityMagnitude;
-    //JuliaC, add speed and jump variables
-    //float xMoveSpeed = ballVelocityMagnitude;
-    //float yJumpSpeed = ballVelocityMagnitude;
 
     public void Awake()
     {
