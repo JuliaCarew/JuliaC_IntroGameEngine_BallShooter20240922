@@ -36,8 +36,6 @@ public class BallManager : MonoBehaviour
         if (_cameraManager == null) { Debug.LogError("CameraManager is not assigned to BallManager in the Inspector!"); }
     }
 
-
-
     private void Start()
     {
         ballStopped = true; // the ball should be stopped at the start of the game
@@ -90,23 +88,7 @@ public class BallManager : MonoBehaviour
         else if (other.gameObject.tag == "ResetTrigger") 
         {
             SetBallToStartPosition();
-        }
-        //MY CHANGES START
-       // switch (other.gameObject.tag)
-       // {
-        //    case "BounceButton":
-        //        yJumpSpeed * 10;
-        //        break;
-        //    case "BoostButton":
-        //        xMoveSpeed * 4;
-        //        break;
-        //    case "SlowButton":
-         //       xMoveSpeed / 4;
-         //       break;
-         //   case "DONOTTOUCH":
-                //you're in time out >:(
-         //       break;
-        //}
+        }       
     }                
     
 
